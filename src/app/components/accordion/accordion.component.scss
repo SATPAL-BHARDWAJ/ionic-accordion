@@ -53,7 +53,7 @@
 /* Arrow Animation Styles End */
 
 .accordion-container h1 {
-    font-size: 20px;
+    font-size: 1rem;
     position: relative;
     width: 100%;
     display: block;
@@ -61,7 +61,10 @@
     padding-right: 28px;
 }
 
-
+.accordion-container p {
+  font-size: 0.9rem;
+  color: #464545;
+}
 
 .accordion-container {
   display: block;

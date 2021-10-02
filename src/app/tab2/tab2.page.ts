@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import {MatAccordion} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +8,16 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  @ViewChild(MatAccordion) accordion: MatAccordion;
+  questions: any = [];
+  isMulti: boolean = false;
+
+  constructor() {
+    fetch('assets/data/faq.json').then(response => response.json())
+    .then((resp) => {
+      console.log(resp);
+      this.questions = resp;
+    })
+  }
 
 }

@@ -11,16 +11,11 @@ export class Tab1Page {
 
   constructor() {
 
-    this.questions = [
-      {
-        question: 'How to use ionic custom components?',
-        answer: 'We have detailed article on it.'
-      },
-      {
-        question: 'How to create shopping app with ionic?',
-        answer: 'We have detailed article on it.',
-      }
-    ];
+    fetch('assets/data/faq.json').then(response => response.json())
+    .then((resp) => {
+      console.log(resp);
+      this.questions = resp;
+    })
   }
 
 }

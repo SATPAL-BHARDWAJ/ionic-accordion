@@ -1,0 +1,14 @@
+[
+    {
+        "question" : "What is progressive web apps?",
+        "answer" : "It is only a web app which doesn’t need to install although it can add to the home screen on mobile devices and it behaves like a native app."
+    },
+    {
+        "question" : "How to build shopping cart with ionic 5?",
+        "answer" : "We have written an article about it which includes Products listing page, My cart page, Add product to the cart and calculate amount and Increase and decrease quantity."
+    },
+    {
+        "question" : "How to build ionic data tables?",
+        "answer" : "You can use ionic grids, angular material data tables or ngx-datatable package. I found angular material data table is most useful and easy to integrate."
+    }
+]
