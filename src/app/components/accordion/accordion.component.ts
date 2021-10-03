@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-accordion',
@@ -13,21 +13,14 @@ export class AccordionComponent implements OnInit {
   @Input()
   description : string;
 
-  @Output()
-  change : EventEmitter<string> = new EventEmitter<string>();
-
-  isMenuOpen : boolean = false;
+  isListItemOpened : boolean = false;
 
   constructor() { }
 
   ngOnInit() {}
 
   toggleAccordion(): void {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
-  broadcastName(name: string): void {
-    this.change.emit(name);
+    this.isListItemOpened = !this.isListItemOpened;
   }
 
 }
