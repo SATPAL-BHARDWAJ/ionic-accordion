@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ng Material Panel
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="bg-gray">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 2</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-label>How much can open at a time?</ion-label>
+  </ion-item>
+  <mat-button-toggle-group [(ngModel)]="isMulti">
+    <mat-button-toggle class="primary-color" value="false" checked>Single</mat-button-toggle>
+    <mat-button-toggle class="primary-color" value="true">Multiple</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <mat-accordion class="example-headers-align" multi="{{ isMulti }}">
+    <mat-expansion-panel *ngFor="let item of questions">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ item?.question }}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      {{ item?.answer }}
+    </mat-expansion-panel>
+  </mat-accordion>
+  
+</ion-content>
