@@ -3,4 +3,4 @@ Let's build ionic accordion with simple html, css and second example with angula
 
 
 # Contributor
-(https://sbsharma.com/)[https://sbsharma.com/]
+[https://sbsharma.com/](https://sbsharma.com/)
